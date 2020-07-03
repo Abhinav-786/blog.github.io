@@ -1,0 +1,223 @@
+@import url("./fonts.css");
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  /*  Text color  */
+
+  --textgray: #505050;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #fff;
+  --midnight: #2bae66ff;
+
+  /*  gradient Color*/
+
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+  /*    Font family   */
+  --Kreon: "Kreon", cursive;
+  --Montserrat: "Montserrat", cursive;
+  --Indie_Flower: "Indie_Flower", cursive;
+}
+/*---------------Global Classes--------------*/
+a {
+  text-decoration: none;
+  color: #505050;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: var(--Kreon);
+}
+h2 {
+  font-family: var(--Indie_Flower);
+}
+h3 {
+  font-family: var(--Montserrat);
+}
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Indie_Flower);
+
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 5vw;
+}
+/*-------x-------Global Classes-------x------*/
+/*-----------------navbar--------------------*/
+nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s;
+}
+.nav .nav-menu {
+  justify-content: space-between;
+}
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.7rem;
+  color: var(--textgray);
+}
+nav .toggle-collapse .toggle-icons i:hover {
+  color: var(--sky);
+}
+.collapse {
+  height: 26rem;
+}
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  display: block;
+  font-family: var(--Kreon);
+}
+.nav .nav-brand .textgray:hover {
+  color: skyblue;
+}
+.nav .nav-items {
+  display: flex;
+  margin: 0rem;
+  font-family: var(--Montserrat);
+  font-size: 1.1rem;
+}
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+}
+.nav .nav-items .nav-link:hover {
+  background-color: skyblue;
+}
+.nav .nav-items .nav-link:hover a {
+  color: var(--white);
+}
+.nav .social {
+  padding: 1.4rem 0rem;
+}
+
+.nav .social i {
+  padding: 0 0.2rem;
+  font-size: 1.4rem;
+}
+.nav .social i:hover {
+  color: skyblue;
+}
+/*------x----------navbar------------x-------*/
+
+/*----------------------------Main Content----------------------------------*/
+
+/*----------------------------Site Title----------------------------------*/
+main .site-title {
+  background: url("../assets/main4.png");
+  background-size: cover;
+  height: 100vh;
+
+  justify-content: center;
+  display: flex;
+}
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: white;
+}
+
+/*----x-----------------------Site Title-----------------------------x----*/
+
+/*----------------------------Blog Carousel----------------------------------*/
+main .blog {
+  background: url("../assets/Abract01.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 65%;
+}
+main .blog .blog-post {
+  padding-top: 6rem;
+}
+main .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+main .blog-content .blog-title {
+  padding: 2rem 0rem;
+}
+main .blog-content .btn-blog {
+  padding: 1rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+  color: var(--textgray);
+  background: transparent;
+  font-size: 2rem;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: transparent;
+  color: skyblue;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  outline: none;
+}
+/*------x---------------------Blog Carousel--------------------------x-------*/
+
+/*----x-----------------------Main Content----------------------------x-----*/
+
+/*   Viewport less then or equal to 753px      */
+@media only screen and (max-width: 753px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+}
+
+/*   Viewport less then or equal to 750px      */

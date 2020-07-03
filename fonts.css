@@ -1,0 +1,21 @@
+@font-face {
+  font-family: kreon;
+  src: url("../fonts/Kreon/static/Kreon-Regular.ttf");
+}
+@font-face {
+  font-family: Indie_Flower;
+  src: url("../fonts/Indie_Flower/IndieFlower-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Source_Sans_Pro;
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
